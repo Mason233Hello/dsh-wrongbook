@@ -1,0 +1,4 @@
+- insert:
+    - id: wrongbook
+      name: '@local/dsh-wrongbook'
+      config: {}

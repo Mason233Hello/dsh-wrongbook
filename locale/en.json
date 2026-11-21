@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Wrong Answers",
+    "description": "A Markdown/LaTeX wrong-question notebook: record problems with their answer and error reason, review them by subject and tag, and generate similar harder problems with the current model."
+  }
+}
