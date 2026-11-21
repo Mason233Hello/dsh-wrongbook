@@ -65,16 +65,18 @@ git clone https://github.com/Mason233Hello/dsh-wrongbook.git
 
 安装后**重启一次 DSH**：宿主半的模块在一个进程里只加载一次，不重启会继续跑旧代码。
 
-### 手动安装
+### 手动安装（非桌面版）
 
-不想用插件管理器时，把它当作普通依赖挂进当前 profile：
+命令行版 DSH 可以直接把它挂进 profile：
 
 ```bash
-cd "$DSH_HOME/profiles/web"          # 或 DSH 桌面版的 profiles/web
+cd "$DSH_HOME/profiles/web"
 pnpm add file:/绝对路径/dsh-wrongbook
 ```
 
-再把包名加入 `package.json` 的 `dsh.profile.bundles` 数组，重启 DSH。
+再把包名 `@local/dsh-wrongbook` 加入 `package.json` 的 `dsh.profile.bundles` 数组，重启。
+
+> 桌面版的 `node_modules` 由 App 按 generation 管理，直接改会被覆盖，请走插件管理器。
 
 ### 更新
 
